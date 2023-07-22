@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark border-bottom navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="/">Store App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between" id="navbarNavAltMarkup">
+      <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item"><a class="nav-link" aria-current="page" asp-action="Index" asp-controller="Dashboard">@* <i class="fa-solid fa-house"></i> *@ Home</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" asp-action="Index" asp-controller="Product">@* <i class="fa-solid fa-list"></i> *@ Products (@await Component.InvokeAsync("ProductSummary"))</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" asp-action="Index" asp-controller="Category">@* <i class="fa-solid fa-list"></i> *@ Category</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" asp-action="Index" asp-controller="Order">@* <i class="fa-solid fa-list"></i> *@ Orders</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" asp-action="Index" asp-controller="Role">@* <i class="fa-solid fa-list"></i> *@ Roles</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" asp-action="Index" asp-controller="User">@* <i class="fa-solid fa-list"></i> *@ Users</a></li>
+      </ul>
+      <ul class="navbar-nav text-white">
+          <li class="nav-item"><a class="nav-link text-white" aria-current="page" asp-area="" asp-action="Index" asp-controller="Home"> <i class="fa fa-solid fa-search"></i>  Web</a></li>
+          <li class="nav-item"><a class="nav-link text-white" aria-current="page" asp-area="" asp-action="Logout" asp-controller="Account"> <i class="fa-solid fa-right-from-bracket"></i>  Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

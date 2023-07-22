@@ -1,0 +1,14 @@
+@using StoreApp
+@using Entities.Models
+@using StoreApp.Pages 
+
+@using Microsoft.AspNetCore.Mvc.Razor
+@using Microsoft.AspNetCore.Mvc.RazorPages
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+
+@* PartialView'ların gözükmesi için tanımladık *@
+@* View Sayfalarını yüklenirken eklenecek kütüphaneler. Model kullanımıda sadeliği sağlar. *@
+
+@addTagHelper *, StoreApp  
+    @* kendi oluşturduğumuz taghelper için*@
